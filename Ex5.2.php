@@ -1,20 +1,23 @@
 <?php
 
-$Horasa;
-$Númerosa;
+$Horasa = 270;
+$Númerosa = 40;
 $Saláriop;
 $Desinss;
 
 $Saláriop = $Númerosa * $Horasa;
 
-if ($Saláriop <= 1302){
+if ($Saláriop <= 1903.98){
+    $Desinss = $Saláriop * 0.0;
+}elseif($Saláriop > 1903.98 and $Saláriop <= 2826.65){
     $Desinss = $Saláriop * 0.075;
-}elseif($Saláriop > 1302 and $Saláriop <= 2571.29){
-    $Desinss = $Saláriop * 0.09;
-}elseif($Saláriop > 2571.29 and $Saláriop <= 3856.94){
-    $Desinss = $Saláriop * 0.12;
-}elseif($Saláriop > 3856.94 and $Saláriop <= 7507.49){
-    $Desinss = $Saláriop * 0.14;
+}elseif($Saláriop > 2826.66 and $Saláriop <= 3705.51){
+    $Desinss = $Saláriop * 0.15;
+}elseif($Saláriop > 3705.51 and $Saláriop <= 4664.68){
+    $Desinss = $Saláriop * 0.225;
+}elseif($Saláriop > 4664.68){
+    $Desinss = $Saláriop * 0.275;
+}
 
 echo "Números de aula: $Númerosa <br>";
 echo "Números de horas - aula: $Horasa <br>";
