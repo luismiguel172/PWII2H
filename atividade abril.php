@@ -6,28 +6,31 @@
     $res = 0;
 
     echo "Escolha dois números <br>";
-    echo "Escolha a operação: <br> 1 - soma<br> 2 - subtracao <br> 3 - multiplicacao <br> 4 - divisao <br> <br>";
+    echo "Escolha a operação: <br> soma <br> subtracao <br> multiplicacao <br> divisao <br> <br>";
 
     function soma($num1, $num2, $res){
 
         $res = $num1 + $num2;
-        echo "Resultado: $res";
+        return $res;
         
     }function subtracao($num1, $num2, $res){
 
         $res = $num1 - $num2;
-        echo "Resultado: $res";
+        return $res;
 
     }function multiplicacao($num1, $num2, $res){
 
         $res = $num1 * $num2;
-        echo "Resultado: $res";
+        return $res;
 
     }function divisao($num1, $num2, $res){
 
         $res = $num1/$num2;
-        echo "Resultado: $res";
-}
+        return $res;
+    }function imprimir(){
+        echo "Operacao selecionada: soma <br>";
+        echo "Numeros selecionados: $num1 e $num2 <br>";
+    }
 
     switch($op){
         case 1:
