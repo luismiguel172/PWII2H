@@ -1,31 +1,40 @@
 <?php
 
-     function soma($num1, $num2, $res){
 
+    function imprimir($num1, $num2, $op){
+            
+        echo "Operacao selecionada: $op <br>";
+        echo "Numeros selecionados: $num1 e $num2 <br>";
+        if($op == 1){
+            echo "Resultado é: ".soma($num1, $num2);
+        }else if($op == 2){
+            echo "Resultado é: ".subtracao($num1, $num2);
+        }else if($op == 3){
+            echo "Resultado é: ".multiplicacao($num1, $num2);
+        }else if($op == 4){
+            echo "Resultado é: ".divisao($num1, $num2);
+        }
+
+    }function soma($num1, $num2){
+    
         $res = $num1 + $num2;
         return $res;
         
-    }function subtracao($num1, $num2, $res){
+    }function subtracao($num1, $num2){
 
         $res = $num1 - $num2;
         return $res;
 
-    }function multiplicacao($num1, $num2, $res){
+    }function multiplicacao($num1, $num2){
 
         $res = $num1 * $num2;
         return $res;
 
-    }function divisao($num1, $num2, $res){
+    }function divisao($num1, $num2){
 
         $res = $num1/$num2;
         return $res;
     
-    }function imprimir($num1, $num2, $op, $res){
-        
-        echo "Operacao selecionada: $op <br>";
-        echo "Numeros selecionados: $num1 e $num2 <br>";
-        soma($res);
-
     }
 
     //while($op != 5){
@@ -38,26 +47,23 @@
     $num1 = 15;
     $num2 = 10;
     $op = 1;
-    $res = 0;
+    
 
     switch($op){
         case 1:
-         soma($num1, $num2, $res);
-         imprimir($num1, $num2, $op, $res); 
+         imprimir($num1, $num2, $op);
          break;
          
         case 2:
          imprimir($num1, $num2, $op);
-         subtracao($num1, $num2, $res);
          break;   
 
         case 3:
          imprimir($num1, $num2, $op);   
-         multiplicacao($num1, $num2, $res);
+         break;
 
         case 4:
          imprimir($num1, $num2, $op);   
-         divisao($num1, $num2, $res);
          break;   
 
         case 5:
