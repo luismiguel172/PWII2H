@@ -50,6 +50,7 @@
     
 
     switch($op){
+        
         case 1:
          imprimir($num1, $num2, $op);
          break;
