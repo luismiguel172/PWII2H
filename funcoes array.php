@@ -141,3 +141,29 @@ if(array_key_exists("ZE",$nomes)){
 }
 
 ?>
+
+    <p>Ponteiros array</p>
+
+<?php
+
+$nomes = array("MA" => "Maria", "ZE" => "José", "PE" => "Pedro","AN" => "Ana");
+
+echo "<br/> Next: ".next($nomes);
+echo "<br/> End: ".end($nomes);
+echo "<br/> Prev: ".prev($nomes);
+echo "<br/> Reset: ".reset($nomes);
+
+?>
+
+    <p>Recuperando a chave de um ponteiro</p>
+
+<?php
+
+$nomes = array("MA" => "Maria", "ZE" => "José", "PE" => "Pedro","AN" => "Ana");
+
+while ($chave = key($nomes)){
+
+    echo "<br/>".$chave;
+
+    next($nomes);
+}
