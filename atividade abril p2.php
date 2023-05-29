@@ -22,18 +22,14 @@
     </div>
   </nav>
 
-    <div>
-     
-    <span> <br> Digite seu Nome: </span>
+  <br>
 
     <div class="input-group mb-3">
     <div class="form-floating">
     <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-    <label for="floatingInputGroup1">Username</label>
+    <label for="floatingInputGroup1">Digite seu nome  </label>
   </div>
 </div>
-
-    </div>
 
     <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
