@@ -22,7 +22,7 @@
 
     <b>Data de conexão: </b> <?php echo date('d/m/y') ?> </br>
 
-    <b>Hora de conexão: </b> <?php echo date('h/i/s') ?> </br>
+    <b>Hora de conexão: </b> <?php echo date('H:i:s') ?> </br>
 
     <a href="sessoes_verifica_sessao.php">Área de administrador</a>
 

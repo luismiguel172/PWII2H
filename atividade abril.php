@@ -39,16 +39,10 @@
 
     //while($op != 5){
 
-    echo "Bem vindo ao sistema <br> <br>";
-    echo "Escolha dois números <br> <br>";
-    echo "Escolha a operação: <br> 1 - soma <br> 2 - subtracao <br> 3 - multiplicacao <br> 4 - divisao <br> <br>";
-    echo "Pressione 5 para sair do sistema <br> <br>";
-
     $num1=15;
     $num2=20;
     $op=1;
     
-
     switch($op){
         
         case 1:
