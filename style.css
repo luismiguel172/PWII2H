@@ -1,5 +1,9 @@
 .background{
-   src: "fundo.jpg";
+   background-color: aquamarine;
+}
+
+.backgrounds{
+    background-color: aliceblue;
 }
 
 .Bem_vindo{
