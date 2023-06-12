@@ -9,17 +9,15 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="background">
+<body>
 
-    <div class="position-absolute top-50 start-50 translate-middle"> 
+    <div class="position-absolute top-0 start-50 translate-middle-x">
 
-    <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-    <span class="navbar-text">
-        Bem vindo ao sistema para a votação
-    </span>
-    </div>
-    </nav>
+    <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+    <p class="text-center">
+    <p class="text-black bg-white">Bem Vindo ao sistema de votação</p>
+    </p>
+</div>
 
     <br>
 
@@ -38,7 +36,7 @@
     <label for="floatingInputGroup1">Digite sua idade </label>
     </div>
     </div>
-    <b>(Sua idade será usada a favor de estatísticas)</b> <br>
+    <b>(Sua idade pode ser usada a favor de estatísticas)</b> <br> <br>
 
     
     <button type="submit" class="btn btn-success">Enviar Informações</button>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="background">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <title>Votação time | Voto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 
     <?php
@@ -20,7 +20,7 @@
 
 <body>
 
-    <div class="position-absolute top-50 start-50 translate-middle" class="backgrounds">
+    
 
     <form action="Atividade time finalizacao.php" method="post" name="Votacao">
 
@@ -54,8 +54,6 @@
     <button type="submit" class="btn btn-danger">Enviar voto</button> 
 
     </form>
-
-    </div>
     
 </body>
 </html>
