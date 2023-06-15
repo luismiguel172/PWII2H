@@ -5,23 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votacao Time | Agradecimento</title>
-
-    <?php
-
-    session_start();
-
-    $_SESSION['nome'] = $_POST['nome'];
-
-    $_SESSION['votos'] = $_POST['votos'];
-
-    ?>
+    <link rel="stylesheet" href="style2.css">
 
 </head>
 <body>
 
-    <b>Obrigado por votar <?php setcookie("voto",$_SESSION['nome']); echo $_COOKIE['voto']; ?></b> <br> <br>
+    <p>Obrigado por votar!!</p>
 
-    <b>Seu voto foi para o: <?php setcookie("votacao",$_SESSION['votos']); echo $_COOKIE['votos']; ?></b>
+    <p>Seu voto foi computado</p>
+
+    <a href="Encerrar sessao.php" name="a" id="a">Encerrar sessão</a>
     
 </body>
 </html>
